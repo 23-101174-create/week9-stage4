@@ -1,0 +1,1310 @@
+:root {
+    --primary-red: #8F1A30;
+    --pink-accent: #FF9EA2;
+    --bg-pink: #FFEAEE;
+    --white: #FFF;
+    --sub:#904350;
+    --light-red: #FFBABB;
+    --accent-red: #E0484A;
+    --deep-red: #911229;
+    --button-color:#FFE3E8;
+    --icon-button:#905566;
+}
+@font-face{
+    font-family:"Biscuit Glitch";
+    src: url(fonts/Biscuit\ Glitch.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    background: var(--bg-pink);
+}
+.background-img{
+    background-image: url(img/third-pic100.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-bar-box{
+    display: flex;
+    align-items: center;
+    gap: 195px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.50);
+}
+.header-links{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.header-font-1{
+    color: var(--pink-accent);
+    font-family: "Biscuit Glitch";
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.header-font-2{
+    color: var(--white);
+    font-family: "Biscuit Glitch";
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+.header-font-2:hover{
+    color: var(--pink-accent);
+}
+.logo{
+    width: 107px;
+    height: 127px;
+}
+.cart{
+    width: 34px;
+    height: 34px;
+}
+.hero-title{
+    color:var(--white);
+    text-align: center;
+    font-family: "Biscuit Glitch";
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 130%;
+    width: 402px;
+    height: 116px;
+}
+.background-2{
+    background-image: url(img/sec-sec.png);
+    width: 100%;
+    height: 130vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec-box{
+    display: flex;
+    width: 930px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.sec-title{
+    color: var(--primary-red);
+    text-align: center;
+    font-family: "Biscuit Glitch";
+    font-size: 40px;
+    font-weight: 400;
+}
+.sub-1{
+    color: var(--sub);
+    text-align: center;
+    font-family: "Almarai";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 115%;
+}
+.background-3{
+    background-image: url(img/third-back.png);
+    width: 100%;
+    height: 140vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.third-large-box{
+    display: flex;
+    width: 930px;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+.third-box{
+    display: flex;
+    width: 251px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.third-title{
+    color: var(--primary-red);
+    text-align: center;
+    font-family: "Biscuit Glitch";
+    font-size: 40px;
+    font-weight: 400;
+}
+.sub-2{
+    color: var(--sub);
+    text-align: center;
+    font-family: "Almarai";
+    font-size: 25px;
+    font-weight: 700;
+}
+.team-photo{
+    width: 646px;
+    height: 646px;
+}
+.sub-3{
+    color: var(--sub);
+    text-align: center;
+    font-family: "Almarai";
+    font-size: 25px;
+    font-weight: 700;
+}
+.button{
+    display: flex;
+    width: 307px;
+    height: 58px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 58px;
+    background: var(--deep-red);
+    color: var(--white);
+    text-align: center;
+    font-family: "Biscuit Glitch";
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 180%;
+    letter-spacing: 0.75px;
+    transition: all 200ms ease-in-out;
+    transition: transform 0.3s;
+}
+.button:hover{
+    background: var(--light-red);
+    color: var(--accent-red);
+    transform: scale(1.1);
+}
+.fourth-background{
+    background-image: url(img/fourth-pic.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fourth-large-box{
+    display: flex;
+    width: 740px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+.text-frame{
+    display: flex;
+    width: 740px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.button-frame{
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.fourth-title{
+    color: var(--white);
+    text-align: center;
+    font-family: "Biscuit Glitch";
+    font-size: 40px;
+    font-weight: 400;
+}   
+.sub-4{
+    color: var(--white);
+    text-align: center;
+    font-family: "Almarai";
+    font-size: 18px;
+    font-weight: 700;
+}
+.button-2{
+    display: flex;
+    width: 214px;
+    height: 45px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 58px;
+    background: var(--button-color);
+    color: var(--deep-red);
+    text-align: center;
+    font-family: "Biscuit Glitch";
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 180%;
+    letter-spacing: 0.75px;
+    transition: transform 0.3s;
+}
+.button-2:hover{
+    transform: scale(1.1);
+}
+.button-3{
+    display: flex;
+    width: 280px;
+    height: 45px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 58px;
+    background: var(--button-color);
+    color: var(--deep-red);
+    text-align: center;
+    font-family: "Biscuit Glitch";
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 180%;
+    letter-spacing: 0.75px;
+    transition: transform 0.3s;
+}
+.button-3:hover{
+    transform: scale(1.1);
+}
+.button-4{
+    display: flex;
+    width: 332px;
+    height: 45px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 58px;
+    background: var(--button-color);
+    color: var(--deep-red);
+    text-align: center;
+    font-family: "Biscuit Glitch";
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 180%;
+    letter-spacing: 0.75px;
+    transition: transform 0.3s;
+}
+.button-4:hover{
+    transform: scale(1.1);
+}
+.last-background{
+    background-image: url(img/last-sec-third.png);
+    width: 100%;
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.last-box-title{
+    display: flex;
+    width: 590px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+.last-text-box{
+    display: flex;
+    width: 590px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.last-icons-box{
+    display: inline-flex;
+    align-items: center;
+    gap: 45px;
+}
+.last-title{
+    color: var(--white);
+    text-align: center;
+    font-family: "Biscuit Glitch";
+    font-size: 40px;
+    font-weight: 400;
+}
+.last-sub{
+    color: var(--white);
+    text-align: center;
+    font-family: "Almarai";
+    font-size: 18px;
+    font-weight: 700;
+}
+.icon-box{
+    width: 84px;
+    height: 84px;
+    border-radius: 10px;
+    background: var(--icon-button);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+.icon-box:hover {
+    transform: scale(1.1);
+}
+.icon-tiktok{
+    width: 36px;
+    height: 42px;
+}
+.last-2-icons{
+    width: 42px;
+    height: 42px;
+}
+main {
+    flex: 1;
+}
+
+footer {
+    background: var(--primary-red);
+    color: var(--white);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 1;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: auto;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: "Biscuit Glitch";
+    letter-spacing: 0.75px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 15px;
+}
+
+.footer-section ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: "Almarai";
+    font-size: 16px;
+    transition: all 200ms ease-in-out;
+}
+
+.footer-section ul li a:hover {
+    color: var(--pink-accent);
+}
+
+.social-icons {
+    display: flex;
+    gap: 17px;
+    margin-top: 10px;
+}
+
+.social-icon-1{
+    width: 31px;
+    height: 31px;
+    transition: transform 0.3s;
+}
+
+.social-icon-1:hover {
+    transform: scale(1.1);
+}
+
+.social-icon-2{
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icon-2:hover {
+    transform: scale(1.1);
+}
+.social-icon-3{
+    width: 23px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icon-3:hover {
+    transform: scale(1.1);
+}
+.footer-bottom {
+    background: var(--dark-red);
+    padding: 25px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-bottom p {
+    font-size: 19px;
+    font-family: "Almarai";
+}
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+.footer-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 19px;
+    font-family: "Almarai";
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+:root {
+    --primary-red: #8F1A30;
+    --pink-accent: #FF9EA2;
+    --bg-pink: #FFEAEE;
+    --white: #FFF;
+    --sub:#904350;
+    --light-red: #FFBABB;
+    --accent-red: #E0484A;
+    --deep-red: #911229;
+    --button-color:#FFE3E8;
+    --icon-button:#905566;
+}
+@font-face{
+    font-family:"Biscuit Glitch";
+    src: url(fonts/Biscuit\ Glitch.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    background: var(--bg-pink);
+}
+.background-img{
+    background-image: url(img/third-pic100.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-bar-box{
+    display: flex;
+    align-items: center;
+    gap: 195px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.50);
+    padding: 10px 20px;
+}
+
+/* Burger Menu Styles */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1001;
+}
+
+.burger-menu span {
+    width: 30px;
+    height: 3px;
+    background-color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.burger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.burger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.header-links{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.header-font-1{
+    color: var(--pink-accent);
+    font-family: "Biscuit Glitch";
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.header-font-2{
+    color: var(--white);
+    font-family: "Biscuit Glitch";
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+.header-font-2:hover{
+    color: var(--pink-accent);
+}
+.logo{
+    width: 107px;
+    height: 127px;
+}
+.cart{
+    width: 34px;
+    height: 34px;
+}
+.hero-title{
+    color:var(--white);
+    text-align: center;
+    font-family: "Biscuit Glitch";
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 130%;
+    width: 402px;
+    height: 116px;
+}
+.background-2{
+    background-image: url(img/sec-sec.png);
+    width: 100%;
+    height: 130vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec-box{
+    display: flex;
+    width: 930px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.sec-title{
+    color: var(--primary-red);
+    text-align: center;
+    font-family: "Biscuit Glitch";
+    font-size: 40px;
+    font-weight: 400;
+}
+.sub-1{
+    color: var(--sub);
+    text-align: center;
+    font-family: "Almarai";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 115%;
+}
+.background-3{
+    background-image: url(img/third-back.png);
+    width: 100%;
+    height: 140vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.third-large-box{
+    display: flex;
+    width: 930px;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+.third-box{
+    display: flex;
+    width: 251px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.third-title{
+    color: var(--primary-red);
+    text-align: center;
+    font-family: "Biscuit Glitch";
+    font-size: 40px;
+    font-weight: 400;
+}
+.sub-2{
+    color: var(--sub);
+    text-align: center;
+    font-family: "Almarai";
+    font-size: 25px;
+    font-weight: 700;
+}
+.team-photo{
+    width: 646px;
+    height: 646px;
+}
+.sub-3{
+    color: var(--sub);
+    text-align: center;
+    font-family: "Almarai";
+    font-size: 25px;
+    font-weight: 700;
+}
+.button{
+    display: flex;
+    width: 307px;
+    height: 58px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 58px;
+    background: var(--deep-red);
+    color: var(--white);
+    text-align: center;
+    font-family: "Biscuit Glitch";
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 180%;
+    letter-spacing: 0.75px;
+    transition: all 200ms ease-in-out;
+    transition: transform 0.3s;
+}
+.button:hover{
+    background: var(--light-red);
+    color: var(--accent-red);
+    transform: scale(1.1);
+}
+.fourth-background{
+    background-image: url(img/fourth-pic.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fourth-large-box{
+    display: flex;
+    width: 740px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+.text-frame{
+    display: flex;
+    width: 740px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.button-frame{
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.fourth-title{
+    color: var(--white);
+    text-align: center;
+    font-family: "Biscuit Glitch";
+    font-size: 40px;
+    font-weight: 400;
+}   
+.sub-4{
+    color: var(--white);
+    text-align: center;
+    font-family: "Almarai";
+    font-size: 18px;
+    font-weight: 700;
+}
+.button-2{
+    display: flex;
+    width: 214px;
+    height: 45px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 58px;
+    background: var(--button-color);
+    color: var(--deep-red);
+    text-align: center;
+    font-family: "Biscuit Glitch";
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 180%;
+    letter-spacing: 0.75px;
+    transition: transform 0.3s;
+}
+.button-2:hover{
+    transform: scale(1.1);
+}
+.button-3{
+    display: flex;
+    width: 280px;
+    height: 45px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 58px;
+    background: var(--button-color);
+    color: var(--deep-red);
+    text-align: center;
+    font-family: "Biscuit Glitch";
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 180%;
+    letter-spacing: 0.75px;
+    transition: transform 0.3s;
+}
+.button-3:hover{
+    transform: scale(1.1);
+}
+.button-4{
+    display: flex;
+    width: 332px;
+    height: 45px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 58px;
+    background: var(--button-color);
+    color: var(--deep-red);
+    text-align: center;
+    font-family: "Biscuit Glitch";
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 180%;
+    letter-spacing: 0.75px;
+    transition: transform 0.3s;
+}
+.button-4:hover{
+    transform: scale(1.1);
+}
+.last-background{
+    background-image: url(img/last-sec-third.png);
+    width: 100%;
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.last-box-title{
+    display: flex;
+    width: 590px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+.last-text-box{
+    display: flex;
+    width: 590px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.last-icons-box{
+    display: inline-flex;
+    align-items: center;
+    gap: 45px;
+}
+.last-title{
+    color: var(--white);
+    text-align: center;
+    font-family: "Biscuit Glitch";
+    font-size: 40px;
+    font-weight: 400;
+}
+.last-sub{
+    color: var(--white);
+    text-align: center;
+    font-family: "Almarai";
+    font-size: 18px;
+    font-weight: 700;
+}
+.icon-box{
+    width: 84px;
+    height: 84px;
+    border-radius: 10px;
+    background: var(--icon-button);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+.icon-box:hover {
+    transform: scale(1.1);
+}
+.icon-tiktok{
+    width: 36px;
+    height: 42px;
+}
+.last-2-icons{
+    width: 42px;
+    height: 42px;
+}
+main {
+    flex: 1;
+}
+
+footer {
+    background: var(--primary-red);
+    color: var(--white);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 1;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: auto;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: "Biscuit Glitch";
+    letter-spacing: 0.75px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 15px;
+}
+
+.footer-section ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: "Almarai";
+    font-size: 16px;
+    transition: all 200ms ease-in-out;
+}
+
+.footer-section ul li a:hover {
+    color: var(--pink-accent);
+}
+
+.social-icons {
+    display: flex;
+    gap: 17px;
+    margin-top: 10px;
+}
+
+.social-icon-1{
+    width: 31px;
+    height: 31px;
+    transition: transform 0.3s;
+}
+
+.social-icon-1:hover {
+    transform: scale(1.1);
+}
+
+.social-icon-2{
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icon-2:hover {
+    transform: scale(1.1);
+}
+.social-icon-3{
+    width: 23px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icon-3:hover {
+    transform: scale(1.1);
+}
+.footer-bottom {
+    background: var(--dark-red);
+    padding: 25px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-bottom p {
+    font-size: 19px;
+    font-family: "Almarai";
+}
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+.footer-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 19px;
+    font-family: "Almarai";
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* tablet */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .nav-bar-box {
+        gap: 80px;
+        padding: 10px 20px;
+    }
+    
+    .header-links {
+        gap: 25px;
+    }
+    
+    .header-font-1,
+    .header-font-2 {
+        font-size: 20px;
+    }
+    
+    .logo {
+        width: 85px;
+        height: 100px;
+    }
+    
+    .cart {
+        width: 28px;
+        height: 28px;
+    }
+
+    .hero-title {
+        font-size: 38px;
+        width: 350px;
+        height: auto;
+    }
+
+    .sec-box {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    .sec-title,
+    .third-title,
+    .fourth-title,
+    .last-title {
+        font-size: 35px;
+    }
+
+    .sub-1,
+    .sub-2,
+    .sub-3 {
+        font-size: 22px;
+    }
+
+    .third-large-box {
+        width: 90%;
+        gap: 35px;
+    }
+
+    .team-photo {
+        width: 500px;
+        height: 500px;
+    }
+
+    .fourth-large-box {
+        width: 90%;
+        gap: 50px;
+    }
+
+    .text-frame {
+        width: 100%;
+    }
+
+    .last-box-title {
+        width: 90%;
+    }
+
+    .last-text-box {
+        width: 100%;
+    }
+
+    .footer-content {
+        padding: 50px 30px;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        padding: 20px 50px;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    .nav-bar-box {
+        gap: 20px;
+        padding: 10px 15px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .header-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        order: 3;
+    }
+    
+    .header-font-1,
+    .header-font-2 {
+        font-size: 16px;
+    }
+    
+    .logo {
+        width: 70px;
+        height: 82px;
+    }
+    
+    .cart {
+        width: 24px;
+        height: 24px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+        width: 90%;
+        height: auto;
+        padding: 0 20px;
+    }
+
+    .background-2,
+    .background-3,
+    .fourth-background,
+    .last-background {
+        height: auto;
+        min-height: 100vh;
+        padding: 60px 20px;
+    }
+
+    .sec-box {
+        width: 100%;
+        gap: 25px;
+    }
+
+    .sec-title,
+    .third-title,
+    .fourth-title,
+    .last-title {
+        font-size: 28px;
+    }
+
+    .sub-1,
+    .sub-2,
+    .sub-3 {
+        font-size: 18px;
+    }
+
+    .sub-4,
+    .last-sub {
+        font-size: 16px;
+    }
+
+    .third-large-box {
+        width: 100%;
+        gap: 30px;
+    }
+
+    .third-box {
+        width: 100%;
+    }
+
+    .team-photo {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .button {
+        width: 90%;
+        max-width: 280px;
+        font-size: 20px;
+        height: 50px;
+    }
+
+    .fourth-large-box {
+        width: 100%;
+        gap: 40px;
+    }
+
+    .text-frame {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .button-frame {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .button-2,
+    .button-3,
+    .button-4 {
+        width: 90%;
+        max-width: 280px;
+        font-size: 18px;
+    }
+
+    .last-box-title {
+        width: 100%;
+        gap: 40px;
+    }
+
+    .last-text-box {
+        width: 100%;
+    }
+
+    .last-icons-box {
+        gap: 30px;
+    }
+
+    .icon-box {
+        width: 70px;
+        height: 70px;
+    }
+
+    .icon-tiktok {
+        width: 30px;
+        height: 35px;
+    }
+
+    .last-2-icons {
+        width: 35px;
+        height: 35px;
+    }
+
+    footer {
+        padding-top: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .footer-logo img {
+        width: 120px;
+    }
+
+    .footer-section h3 {
+        font-size: 20px;
+    }
+
+    .footer-section ul li a {
+        font-size: 14px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        padding: 20px;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footer-bottom p,
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
